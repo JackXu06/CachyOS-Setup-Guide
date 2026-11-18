@@ -29,7 +29,7 @@ CachyOS 是一个基于 Arch Linux、面向性能优化的发行版，开箱即�
 | [docs/pacman.md](cachyos包管理器基本介绍.md) | CachyOS 几种包管理器介绍（pacman / paru / flatpak） |
 | [docs/input-method.md](中文输入法安装.md) | 中文输入法安装与配置（Fcitx5） |
 | [docs/wps-fix.md](wps-fcitx-fix.md) | WPS 无法输入中文的问题修复 |
-| [docs/apps.md](CachyOS Common Apps Install List.md) | 常用软件安装清单 |
+| [docs/apps.md](CachyOSCommonAppsInstallList.md) | 常用软件安装清单 |
 | [docs/steam302.md](docs/steam302.md) | steamcommunity302 安装（解决 Steam 商店/社区打不开） |
 
 **推荐按顺序阅读**：包管理器 → 输入法 → WPS 修复 → 常用软件。
