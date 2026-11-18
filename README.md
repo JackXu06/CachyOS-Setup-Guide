@@ -36,13 +36,14 @@ CachyOS 是一个基于 Arch Linux、面向性能优化的发行版，开箱即�
 ## 📂 目录结构
 
 ```
-cachyos-base-config/
-├── README.md                # 主页（本文件）
-├── docs/                    # 详细文档
-│   ├── pacman.md            # 包管理器介绍
-│   ├── input-method.md      # 中文输入法安装
-│   ├── wps-fix.md           # WPS 输入法修复
-│   ├── apps.md              # 常用软件安装
+CachyOS-Setup-Guide/
+├── README.md                  # 主页（本文件）
+├── docs/
+│   ├── pacman.md              # 包管理器介绍
+│   ├── input-method.md        # 中文输入法安装
+│   ├── wps-fix.md             # WPS 输入法修复
+│   └── apps.md                # 常用软件安装清单
+└── LICENSE
 
 
 ```
