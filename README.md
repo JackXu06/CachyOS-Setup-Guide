@@ -27,7 +27,7 @@ CachyOS 是一个基于 Arch Linux、面向性能优化的发行版，开箱即�
 | 文档 | 内容 |
 | ---- | ---- |
 | [docs/pacman.md](AppsInstallList.md) | CachyOS 几种包管理器介绍（pacman / paru / flatpak） |
-| [docs/input-method.md](Chinese input method.md) | 中文输入法安装与配置（Fcitx5） |
+| [docs/input-method.md](Chinese-input-method.md) | 中文输入法安装与配置（Fcitx5） |
 | [docs/wps-fix.md](wps-fcitx-fix.md) | WPS 无法输入中文的问题修复 |
 | [docs/apps.md](AppsInstallList.md) | 常用软件安装清单 |
 
