@@ -1,4 +1,4 @@
-# CachyOS 常用软件安装清单
+# :art: CachyOS 常用软件安装清单
 
 > 适用于 CachyOS（基于 Arch Linux）。更新日期：2026-11-18
 
@@ -178,7 +178,6 @@ flatpak install flathub it.mijorus.gearlever
 | VLC 播放器 | `sudo pacman -S vlc` | https://www.videolan.org/ |
 | Steam | `sudo pacman -S steam` | https://store.steampowered.com/ |
 | Flameshot 截图 | `sudo pacman -S flameshot` | https://flameshot.org/ |
-| 输入法 Fcitx5 | `sudo pacman -S fcitx5 fcitx5-configtool fcitx5-qt fcitx5-gtk fcitx5-chinese-addons` | https://fcitx-im.org/ |
 
 ---
 
@@ -272,18 +271,6 @@ google-chrome-stable --ozone-platform=wayland
 ### Q12：B 站客户端播放黑屏/花屏
 
 客户端设置中关闭「硬件加速」，或切换解码方式为 AVC（H.264）。
-
-### Q13：Chrome/VS Code 里 Fcitx5 输入法无法使用
-
-添加环境变量（写入 `~/.bashrc` 或 `~/.config/fish/config.fish` 等对应 shell 配置）：
-
-```bash
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-```
-
-然后重启或重新登录。
 
 ---
 
