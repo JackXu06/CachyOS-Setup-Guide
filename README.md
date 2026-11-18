@@ -1,21 +1,57 @@
-### 第一步：准备基础环境
-1.更新系统并安装基础依赖
-`sudo pacman -Syu --needed base-devel git`
+# CachyOS 基础配置
 
-2.从 AUR 编译安装 paru
-`git clone https://aur.archlinux.org/paru.git`
-`cd paru`
-`makepkg -si`
-### 第二步：安装 Fcitx5 与雾凇拼音
-`paru -S fcitx5-im fcitx5-rime rime-ice-git`
-###  第三步：清理旧配置（重要）
-`mv ~/.local/share/fcitx5/rime ~/.local/share/fcitx5/rime.bak 2>/dev/null`
-### 第四步：设置环境变量
-创建或编辑配置文件：
-`nano ~/.config/environment.d/im.conf`
-写入下面这一行
-`XMODIFIERS=@im=fcitx`
-### 第五步：部署与启用雾凇拼音
-重新登录后，Fcitx5 应该已经由 KWin 自动拉起了。
-### 第六步：手动重启部署
-`fcitx5-remote -r`
+<div align="center">
+
+![CachyOS](https://img.shields.io/badge/OS-CachyOS-1793D1?logo=arch-linux&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+**CachyOS 装机后的基础配置指南**
+
+</div>
+
+---
+
+## 📖 项目介绍
+
+CachyOS 是一个基于 Arch Linux、面向性能优化的发行版，开箱即用，但国内用户装完系统通常还要完成几件事：
+
+- 了解 **包管理器**（装一切软件的前提）
+- 配置 **中文输入法**
+- 修复 **WPS 中文输入** 这个经典坑
+- 安装 **常用软件**
+
+本项目把以上内容的用法整理成一套文档和脚本，方便自己复用，也欢迎参考。
+
+## 📚 文档导航
+
+| 文档 | 内容 |
+| ---- | ---- |
+| [docs/pacman.md](docs/pacman.md) | CachyOS 几种包管理器介绍（pacman / paru / flatpak） |
+| [docs/input-method.md](docs/input-method.md) | 中文输入法安装与配置（Fcitx5） |
+| [docs/wps-fix.md](docs/wps-fix.md) | WPS 无法输入中文的问题修复 |
+| [docs/apps.md](docs/apps.md) | 常用软件安装清单 |
+| [docs/steam302.md](docs/steam302.md) | steamcommunity302 安装（解决 Steam 商店/社区打不开） |
+
+**推荐按顺序阅读**：包管理器 → 输入法 → WPS 修复 → 常用软件。
+
+## 📂 目录结构
+
+```
+cachyos-base-config/
+├── README.md                # 主页（本文件）
+├── docs/                    # 详细文档
+│   ├── pacman.md            # 包管理器介绍
+│   ├── input-method.md      # 中文输入法安装
+│   ├── wps-fix.md           # WPS 输入法修复
+│   ├── apps.md              # 常用软件安装
+│   └── steam302.md          # steamcommunity302 安装
+└── scripts/                 # 一键脚本（可选）
+    ├── install-input.sh
+    ├── fix-wps-input.sh
+    └── install-apps.sh
+```
+
+## 📜 License
+
+[MIT License](LICENSE)
+
