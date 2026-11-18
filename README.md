@@ -148,7 +148,7 @@ update-desktop-database ~/.local/share/applications
 
 ## 📜 License
 
-本项目采用 [MIT License](LICENSE)。你可以自由使用、修改、分发这些文档，但需保留版权声明。
+本项目采用 [MIT License](LICENSE) 你可以自由使用、修改、分发这些文档
 
 ---
 
